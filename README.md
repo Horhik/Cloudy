@@ -1,8 +1,8 @@
-![](https://github.com/Huvik/Cloudy/blob/master/screen.png)
-# Cloudy
-Simple zsh theme combined with few additions:
+![](https://github.com/Horhik/SimpleTW/blob/master/screen.png)
+# Simple TW
+Zsh theme which shows current timewarrior task:
 * [Hyper](https://github.com/zeit/hyper/)
-* Monaco font
 * [hyperterm-snazzy](https://github.com/sindresorhus/hyper-snazzy)
 
-You can check my [dotfiles](https://github.com/Huvik/dotfiles)
+**Forked from  [huv1k/Cloudy](https://github.com/huv1k/Cloudy)**
+You can check his [dotfiles](https://github.com/Huvik/dotfiles)
