@@ -6,7 +6,8 @@ timewarrior_time(){
 }
 
 timewarrior_name(){
-  echo $(timew get dom.active.tag.$(timew get dom.active.tag.count))
+  echo $(timew get dom.active.tag.1) '|' $(timew get dom.active.tag.$(timew get dom.active.tag.count)) 
+
 }
 timewar(){
   kek="There is no active time tracking."
@@ -17,7 +18,7 @@ timewar(){
     echo "%{$fg_bold[red]%} No task tracking"  
   else
     touch /tmp/twworks
-    echo "%{$fg_bold[yellow]%} $(timewarrior_name)  %{$fg_bold[yellow]%}⌚ %{$fg[cyan]%}$(timewarrior_time)%{$FG[012]%"
+    echo "%{$fg_bold[yellow]%}$(timewarrior_name)%{$fg_bold[yellow]%} ⌚ %{$fg[cyan]%}$(timewarrior_time)%{$FG[012]%"
   fi
 }
 
@@ -32,7 +33,7 @@ get_stat(){
     fi
   }
 
-PROMPT='$(get_stat)$dir $(git_prompt_info)'
+PROMPT='$(get_stat)%{$fg_bold[green]%} %{$fg[green]%}%c $(git_prompt_info)'
 
 RPROMPT='$(timewar)'
 
